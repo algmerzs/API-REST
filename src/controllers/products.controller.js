@@ -7,7 +7,7 @@ export const createProduct = async (req, res) => {
 
     const savedProduct = await newProduct.save();
 
-    res.status(204).json(savedProduct);
+    res.status(201).json(savedProduct);
 };
 
 export const getProducts = async (req, res) => {
